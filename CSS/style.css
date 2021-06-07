@@ -1,0 +1,136 @@
+/* Hej Bond! Här är en till version av mitt tangentbord 
+där färgerna liknar ditt exempel mer, ifall det är viktigt. */
+
+.row div:hover:not(.arrow_keys, .enter), .enter:hover .enter_top, .enter:hover .enter_bottom{
+    background-color: rgb(230, 230, 230);
+    cursor: pointer;
+} 
+.row:hover{
+    cursor: default;
+}
+#keyboard{
+    width: 1010px;
+    height: 415px;
+    background-color: rgb(204, 204, 204);
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 10%;
+    padding: 0 10px 0 10px;
+}
+.row{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 70px;
+    width: 100%;
+}
+.row div{
+    margin: 0 4px 0 4px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.keys{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    background-color: white;
+}
+.row1 div{
+    width: 70px;
+    height: 30px;
+    background-color: white;
+    text-align: center;
+
+}
+.row1{
+    height: 30px;
+    margin-bottom: 8px;
+    padding-top: 20px;
+}
+#power{
+    padding: 0 4px 0 4px;
+    font-size: 19px;
+}
+#delete{
+    padding-left:60px;
+}
+#tab{
+    padding-right: 30px;
+}
+#caps{
+    padding-right: 55px;
+}
+.enter{
+    width: 90px;
+    height: 60px;
+    right: 300px;
+}
+.enter_top{
+    z-index: 1;
+    height: 60px;
+    width: 90px;
+    background-color: white;
+    right: 3.6px;
+    position: relative;
+    text-align: right;
+}
+.enter_bottom{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    z-index: 0;
+    background-color: white;
+    padding-top: 20px;
+    position: relative;
+    right: -14.5px;
+    bottom: 10px;
+
+}
+#short_shift{
+    padding-right:30px ;
+}
+#long_shift{
+    padding-left: 93px;
+}
+#space{
+    width: 385px;
+}
+.arrow_keys{
+    display: flexbox;
+    width: 200px;
+    height: 60px;
+}
+.arrows{
+    width: 60px;
+    height: 30px;
+    background-color: white;
+    display: inline-block;
+    width: 30%;
+    height: 50%;
+}
+#up{
+    align-self: flex-start;
+    display: block;
+    margin: auto;
+}
+#left{
+    align-self: flex-end;
+    margin-right: -1px;
+    position: relative;
+    right: 5px;
+}
+#down{
+    align-self: flex-end;
+    margin: auto;
+}
+#right{
+    align-self: flex-end;
+    margin-right: -1px;
+}
+p{
+    text-align: center;
+    font-size: 1.25em;
+    font-family: Arial, Helvetica, sans-serif;
+}
